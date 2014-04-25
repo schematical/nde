@@ -1,0 +1,38 @@
+{{> _header }}
+
+{{> _navbar }}
+
+<table class="table">
+        <tr>
+            
+                <th>
+                    code
+                </th>
+            
+                <th>
+                    application
+                </th>
+            
+        </tr>
+        {{# requestCode }}
+            <tr>
+                
+                    <td>
+                        {{ code }}
+                    </td>
+                
+                    <td>
+                        {{ application }}
+                    </td>
+                
+                
+            </tr>
+        {{/ requestCode }}
+    </table>
+
+     <a class='btn btn-default btn-block' href='/requestCodes/new'>
+         Create New RequestCode
+     </a>
+
+{{> _footer }}
+

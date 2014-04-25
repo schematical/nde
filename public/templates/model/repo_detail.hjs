@@ -1,0 +1,22 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ repo.name }}<small>{{ repo.desc }}</small></h1>
+</div>
+
+    <h3>Namespace</h3>
+    {{ repo.namespace }}
+
+    <h3>Name</h3>
+    {{ repo.name }}
+
+    <h3>Desc</h3>
+    {{ repo.desc }}
+
+    <h3>Url</h3>
+    {{ repo.url }}
+
+<a class='btn btn-default btn-sm' href='{{ repo.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

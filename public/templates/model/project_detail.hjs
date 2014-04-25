@@ -1,0 +1,22 @@
+{{> _header }}
+{{> _navbar }}
+<div class="page-header">
+    <h1>{{ project.name }}<small>{{ project.desc }}</small></h1>
+</div>
+
+    <h3>Namespace</h3>
+    {{ project.namespace }}
+
+    <h3>Name</h3>
+    {{ project.name }}
+
+    <h3>Desc</h3>
+    {{ project.desc }}
+
+    <h3>Primary_repo</h3>
+    {{ project.primary_repo }}
+
+<a class='btn btn-default btn-sm' href='{{ project.uri }}/edit'>
+    Edit
+</a>
+{{> _footer }}

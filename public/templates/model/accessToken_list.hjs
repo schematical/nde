@@ -1,0 +1,54 @@
+{{> _header }}
+
+{{> _navbar }}
+
+<table class="table">
+        <tr>
+            
+                <th>
+                    perms
+                </th>
+            
+                <th>
+                    token
+                </th>
+            
+                <th>
+                    application
+                </th>
+            
+                <th>
+                    account
+                </th>
+            
+        </tr>
+        {{# accessToken }}
+            <tr>
+                
+                    <td>
+                        {{ perms }}
+                    </td>
+                
+                    <td>
+                        {{ token }}
+                    </td>
+                
+                    <td>
+                        {{ application }}
+                    </td>
+                
+                    <td>
+                        {{ account }}
+                    </td>
+                
+                
+            </tr>
+        {{/ accessToken }}
+    </table>
+
+     <a class='btn btn-default btn-block' href='/{{account.namespace}}access_tokens/new'>
+         Create New AccessToken
+     </a>
+
+{{> _footer }}
+

@@ -1,0 +1,36 @@
+{{> _header }}
+
+{{> _navbar }}
+
+<form role="form" action='/{{account.namespace}}/{{ project._id }}' method='POST' enctype="multipart/form-data">
+    
+        
+            <div class="form-group">
+                <label for="namespace">namespace</label>
+                <input name="namespace" type="namespace" class="form-control" id="namespace" placeholder="Enter namespace" value="{{ project.namespace }}">
+            </div>
+        
+    
+        
+            <div class="form-group">
+                <label for="name">name</label>
+                <input name="name" type="name" class="form-control" id="name" placeholder="Enter name" value="{{ project.name }}">
+            </div>
+        
+    
+        
+            <textarea id="desc" name="desc" class="form-control" rows="3">{{ project.desc}}</textarea>
+        
+    
+        
+            <div class="form-group">
+                <label for="primary_repo">primary_repo</label>
+                <input name="primary_repo" type="primary_repo" class="form-control" id="primary_repo" placeholder="Enter primary_repo" value="{{ project.primary_repo }}">
+            </div>
+        
+    
+
+
+    <button type="submit" class="btn btn-default">Submit</button>
+</form>
+{{> _footer }}

@@ -1,0 +1,8 @@
+{{> _header }}
+
+{{> _navbar }}
+
+    <h1>It works...</h1>
+    <a href='/projects'>My Projects</a>
+
+{{> _footer }}

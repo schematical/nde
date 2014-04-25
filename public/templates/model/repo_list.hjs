@@ -1,0 +1,60 @@
+{{> _header }}
+
+{{> _navbar }}
+
+<table class="table">
+        <tr>
+            
+                <th>
+                    namespace
+                </th>
+            
+                <th>
+                    name
+                </th>
+            
+                <th>
+                    desc
+                </th>
+            
+                <th>
+                    url
+                </th>
+            
+        </tr>
+        {{# repo }}
+            <tr>
+                
+                    <td>
+                        {{ namespace }}
+                    </td>
+                
+                    <td>
+                        {{ name }}
+                    </td>
+                
+                    <td>
+                        {{ desc }}
+                    </td>
+                
+                    <td>
+                        {{ url }}
+                    </td>
+                
+                
+                <td>
+                    <a class='btn btn-default btn-sm' href='/{{account.namespace}}/{{project.namespace}}/repos/{{ namespace }}'>
+                        View
+                    </a>
+                </td>
+                
+            </tr>
+        {{/ repo }}
+    </table>
+
+     <a class='btn btn-default btn-block' href='/{{account.namespace}}/{{project.namespace}}/repos/new'>
+         Create New Repo
+     </a>
+
+{{> _footer }}
+
